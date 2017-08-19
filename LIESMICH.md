@@ -1,5 +1,7 @@
 # XF Roof Module
 
+Englisch readme: [README.md](https://github.com/viper-666/xf_roof_module/blob/master/README.md)
+
 Mit diesem Modul kann man das Verdeck des Crossfire öffnen/schließen ohne das man den Öffnen bzw. Schließen-Button die ganze Zeit gedrückt halten muss.
 Eine weitere Funktion ist, dass man in dem Arduino-Sketch einstellen kann bis zu welcher Geschwindigkeit man dies tun kann.
 Voreingestellt ist 50 km/h und man sollte dies möglichst nicht erhöhen. Wenn die Geschwindigkeit bei der du das Verdeck öffest zu hoch ist wird dies dein Verdeck oder die Mechanik beschädigen.

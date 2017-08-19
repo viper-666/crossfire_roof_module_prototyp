@@ -1,5 +1,7 @@
 # XF Roof Module
 
+Deutsche Anleitung: [LIESMICH.md](https://github.com/viper-666/xf_roof_module/blob/master/LIESMICH.md)
+
 An modul that automatic opened and closed the roof of an Chrysler Crossfire convertible up to 50 kph or 31 mph (recommended). You don't need to hold the open or close button the whole time the roof works. You can set the max speed (in kph) until the roof works in the Arduino sketch, you have only to change the value of the variable "int GESCHWINDIGKEIT = 50".
 But don't go to high, you can damage your roof.
 
