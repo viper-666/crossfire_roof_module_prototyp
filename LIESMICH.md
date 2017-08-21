@@ -1,6 +1,6 @@
 # XF Roof Module
 
-Englisch readme: [README.md](https://github.com/viper-666/xf_roof_module/blob/master/README.md)
+English readme: [README.md](https://github.com/viper-666/xf_roof_module/blob/master/README.md)
 
 Mit diesem Modul kann man das Verdeck des Crossfire öffnen/schließen ohne das man den Öffnen bzw. Schließen-Button die ganze Zeit gedrückt halten muss.
 Eine weitere Funktion ist, dass man in dem Arduino-Sketch einstellen kann bis zu welcher Geschwindigkeit man dies tun kann.
@@ -9,7 +9,7 @@ Voreingestellt ist 50 km/h und man sollte dies möglichst nicht erhöhen. Wenn d
 Ich habe das Modul nun schon mehrere Monate ohne Probleme getestet aber es könnte deinen Wagen beschädigen. Deshalb geschieht ein Nachbau auf eigene Gefahr!
 
 
-## Lasst und anfangen:
+## Lasst uns anfangen:
 
 Zuerst musst du die Hardware bauen, also die Platine löten. Leider habe ich nicht die Kenntnisse eine Platine zu designen welche du dir ätzen lassen kannst.
 Aber falls du so eine Platine erstellt hast stelle mir das Layout bitte zur Verfügung, so dass alle anderen auch davon profitieren können.
@@ -80,7 +80,7 @@ Lochrasterplatine
 ![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper006.JPG)
 ![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper007.JPG)
 ![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper008.JPG)
-![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper009.JPG)
+
 
 
 ### Installing
@@ -90,8 +90,8 @@ to be continued...
 
 ## Erstellt mit:
 
-* [ARDUINO](https://www.arduino.cc/en/Main/Software) - I used the Version 1.6.8
-* [EAGLE](https://www.autodesk.com/products/eagle/free-download) - The Software is free for peronal use but you have to make an Autodesk Account.
+* [ARDUINO](https://www.arduino.cc/en/Main/Software) - Ich habe die Version 1.6.8 verwendet
+* [EAGLE](https://www.autodesk.com/products/eagle/free-download) - Die Software ist für den privaten Gebrauch kostenlos abe du benötigst einen Autodesk Account.
 
 
 ## Autor

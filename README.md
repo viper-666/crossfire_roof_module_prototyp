@@ -76,7 +76,7 @@ Perfboard
 ![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper006.JPG)
 ![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper007.JPG)
 ![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper008.JPG)
-![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper009.JPG)
+
 
 
 ### Installing
