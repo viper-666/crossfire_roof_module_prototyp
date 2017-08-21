@@ -24,51 +24,59 @@ Bis dahin musst du die Schaltung leider wie ich auf einer Lochrasterplatine aufb
 |Wert		|Anzahl|
 |Arduino Nano V3|1     |
 
-|Widerstaende:	       |
+|Widerstaende:| |
 |---|---|
 |Wert|Anzahl|
 |1M |1 |
-2k2	3
-5k	2
-22k	5
-100k	5
-560k	1
-200	1
+|2k2 |3 |
+|5k |2 |
+|22k |5 |
+|100k |5 |
+|560k |1 |
+|200 |1 |
 
-Zener Diode:
-Wert		Anzahl
-1N750 (4,7V)	1
+|Zener Diode:| |
+|---|---|
+|Wert|Anzahl|
+|1N750 (4,7V)|1|
 
-Diode:
-Wert	Anzahl
-1N4007	1
+|Diode:| |
+|---|---|
+|Wert|Anzahl|
+|1N4007|1|
 
-Spannungsregler:
-Wert			Anzahl
-78L05Z (5V) TO92	1
+|Spannungsregler:| |
+|---|---|
+|Wert|Anzahl|
+|78L05Z (5V) TO92|1|
 
-Kondensatoren:
-Wert	Anzahl
-100µF	2
-100n	2
+|Kondensatoren:| |
+|---|---|
+|Wert|Anzahl|
+|100µF|2|
+|100n|2|
 
-Transistoren:
-Wert	Anzahl
-BC547	5
+|Transistoren:| |
+|---|---|
+|Wert|Anzahl|
+|BC547|5|
 
-Sicherung:
-Wert			Anzahl
-200mA			1
-Sicherungshalter	1
+|Sicherung:| |
+|---|---|
+|Wert|Anzahl|
+|200mA|1|
+|Sicherungshalter|1|
 
-Stecker:
-Wert		 									Anzahl
-TE Connectivity AMP 1-1586041-4 VAL-U-LOK CONN HEADER 14POS R/A W/O PEGS 		1 oder 2
-TE Connectivity AMP 1-1586019-4 VAL-U-LOK CONN RCPT HOUSING 14POS 4.2MM 		1 oder 2
-TE Connectivity AMP 1586315-1 CONN TERM SOCKET 18-22AWG TIN 				14 oder 28
+|Stecker:| |
+|---|---|
+|Wert|Anzahl|
+|TE Connectivity AMP 1-1586041-4 VAL-U-LOK CONN HEADER 14POS R/A W/O PEGS|1 oder 2|
+|TE Connectivity AMP 1-1586019-4 VAL-U-LOK CONN RCPT HOUSING 14POS 4.2MM|1 oder 2|
+|TE Connectivity AMP 1586315-1 CONN TERM SOCKET 18-22AWG TIN|14 oder 28|
 
-Platine:
-Lochrasterplatine
+|Platine:|
+|---|
+|Lochrasterplatine|
 
 
 ## Aufbau der Hardware
