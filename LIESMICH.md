@@ -20,14 +20,14 @@ Bis dahin musst du die Schaltung leider wie ich auf einer Lochrasterplatine aufb
 ### Stückliste Hardware
 
 |Mikrocontroler:       |
------------------------
+|---|---|
 |Wert		|Anzahl|
 |Arduino Nano V3|1     |
 
 |Widerstaende:	       |
------------------------
-|Wert	        |Anzahl|
-|1M	        |1     |
+|---|---|
+|Wert|Anzahl|
+|1M |1 |
 2k2	3
 5k	2
 22k	5
