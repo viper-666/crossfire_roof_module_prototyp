@@ -4,7 +4,7 @@ English readme: [README.md](https://github.com/viper-666/xf_roof_module/blob/mas
 
 Mit diesem Modul kann man das Verdeck des Crossfire öffnen/schließen ohne das man den Öffnen bzw. Schließen-Button die ganze Zeit gedrückt halten muss.
 Eine weitere Funktion ist, dass man in dem Arduino-Sketch einstellen kann bis zu welcher Geschwindigkeit man dies tun kann.
-Voreingestellt ist 50 km/h und man sollte dies möglichst nicht erhöhen. Wenn die Geschwindigkeit bei der du das Verdeck öffest zu hoch ist wird dies dein Verdeck oder die Mechanik beschädigen.
+Voreingestellt ist 50 km/h (in der Variable "int GESCHWINDIGKEIT = 50") und man sollte dies möglichst nicht erhöhen. Wenn die Geschwindigkeit bei der du das Verdeck öffest zu hoch ist wird dies dein Verdeck oder die Mechanik beschädigen.
 
 Ich habe das Modul nun schon mehrere Monate ohne Probleme getestet aber es könnte deinen Wagen beschädigen. Deshalb geschieht ein Nachbau auf eigene Gefahr!
 
@@ -17,13 +17,16 @@ Aber falls du so eine Platine erstellt hast stelle mir das Layout bitte zur Verf
 Bis dahin musst du die Schaltung leider wie ich auf einer Lochrasterplatine aufbauen.
 
 
-### Stueckliste Hardware
+### StÜckliste Hardware
 
-Mikrocontroler:
-Wert		Anzahl
-Arduino Nano	1
-
-Widerstaende:
+|Mikrocontroler:       |
+-----------------------
+|Wert		|Anzahl|
+-----------------------
+|Arduino Nano V3|1     |
+-----------------------
+|Widerstaende:	       |
+-----------------------
 Wert	Anzahl
 1M	1
 2k2	3
@@ -75,7 +78,7 @@ Zum Aufbau wird eine Lochrasterplatine im Maß von 77mm x 80mm benötigt.
 
 ![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper000.JPG)
 
-Zuerst habe ich die beiden Buchsen eingelötet. Für das Dachmodul wird nur die untere benötigt, die obere führt die andren Ein- und Ausgänge des Arduino Nano nach außen. Dies habe ich für zukünftige Erweiterungen der Funktionen gemacht.
+Zuerst habe ich die beiden Buchsen eingelötet. Für das Dachmodul wird nur die untere benötigt, die obere führt die anderen Ein- und Ausgänge des Arduino Nano nach außen. Dies habe ich für zukünftige Erweiterungen der Funktionen gemacht.
 Dafür müssen die Löcher der Platine aufgebohrt werden.
 
 ![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper001.JPG)
@@ -86,7 +89,6 @@ Ganz unten der Arduino Nano, rechts daneben die 12-18V auf 5V Spannungswandlung 
 Dann noch die fehlenden Verbindungen mit Kabeln herstellen.
 
 ![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper006.JPG)
-![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper007.JPG)
 ![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper008.JPG)
 
 Den Stecker mit den Kabeln wird nach folgendem [Schema](https://github.com/viper-666/xf_roof_module/blob/master/Verkabelung.pdf) erstellt und in den Kabelbaum des Crossfire eingebunden.
