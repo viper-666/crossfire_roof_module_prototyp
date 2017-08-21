@@ -71,15 +71,26 @@ Lochrasterplatine
 
 ## Aufbau der Hardware
 
-
+Zum Aufbau wird eine Lochrasterplatine im Maß von 77mm x 80mm benötigt.
 
 ![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper000.JPG)
+
+Zuerst habe ich die beiden Buchsen eingelötet. Für das Dachmodul wird nur die untere benötigt, die obere führt die andren Ein- und Ausgänge des Arduino Nano nach außen. Dies habe ich für zukünftige Erweiterungen der Funktionen gemacht.
+Dafür müssen die Löcher der Platine aufgebohrt werden.
+
 ![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper001.JPG)
+
+Anschließend habe ich die Platine folgendermaßen nach dem [Schaltplan](https://github.com/viper-666/xf_roof_module/blob/master/Dachmodul.pdf) aufgebaut:
+Ganz unten der Arduino Nano, rechts daneben die 12-18V auf 5V Spannungswandlung und daneben den Sichrungshalter.
+Über dem Arduinno Nano die 5 Transistoren mit der dazugehörigen Komponenten.
+Dann noch die fehlenden Verbindungen mit Kabeln herstellen.
+
 ![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper006.JPG)
 ![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper007.JPG)
 ![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper008.JPG)
 
 Den Stecker mit den Kabeln wird nach folgendem [Schema](https://github.com/viper-666/xf_roof_module/blob/master/Verkabelung.pdf) erstellt und in den Kabelbaum des Crossfire eingebunden.
+Die in Blau bezeichneten PINs gehören auf den entsprechenden PINs des Steckers.
 
 ![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper010.JPG)
 ![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper011.JPG)
@@ -106,6 +117,11 @@ PIN 9 mit PIN 13
 ### Installation
 
 to be continued...
+
+
+### Einbau in den Crossfire
+
+![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper15.JPG)
 
 
 ## Erstellt mit:
