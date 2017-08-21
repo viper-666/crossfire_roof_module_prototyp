@@ -17,18 +17,17 @@ Aber falls du so eine Platine erstellt hast stelle mir das Layout bitte zur Verf
 Bis dahin musst du die Schaltung leider wie ich auf einer Lochrasterplatine aufbauen.
 
 
-### StÜckliste Hardware
+### Stückliste Hardware
 
 |Mikrocontroler:       |
 -----------------------
 |Wert		|Anzahl|
------------------------
 |Arduino Nano V3|1     |
------------------------
+
 |Widerstaende:	       |
 -----------------------
-Wert	Anzahl
-1M	1
+|Wert	        |Anzahl|
+|1M	        |1     |
 2k2	3
 5k	2
 22k	5
