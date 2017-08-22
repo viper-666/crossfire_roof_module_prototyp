@@ -88,11 +88,13 @@ Bis dahin musst du die Schaltung leider wie ich auf einer Lochrasterplatine aufb
 |TE Connectivity AMP 1586315-1 CONN TERM SOCKET 18-22AWG TIN|14 oder 28|
 
 In Deutschland bekommt man die Buchse, den Stecker und die Buchsenkontakte z.B. bei [Conrad Elektronik](https://www.conrad.de)
+
 |Artikel|Bezeichnung|
 |---|---|
 |1174833|STIFTSTECKER 180° (1-1586041-4)|
 |1174793|BUCHSENGEHÄUSE (1-0794954-4)|
 |747987|BUCHSENKONTAKT AWG 22-18|
+
 Man kann aber jede andere Buchse und Stecker nehmen solange diese mindestens 8 Kontakte haben.
 
 
