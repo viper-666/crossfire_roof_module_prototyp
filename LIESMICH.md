@@ -123,7 +123,7 @@ Dann noch die fehlenden Verbindungen mit Kabeln herstellen.
 ![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper006.JPG)
 ![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper008.JPG)
 
-Den Stecker mit den Kabeln wird nach folgendem [Schema](https://github.com/viper-666/xf_roof_module/blob/master/Verkabelung.pdf) erstellt und in den Kabelbaum des Crossfire eingebunden.
+Der Stecker mit den Kabeln wird nach folgendem [Schema](https://github.com/viper-666/xf_roof_module/blob/master/Verkabelung.pdf) erstellt und in den Kabelbaum des Crossfire eingebunden.
 Die in Blau bezeichneten PINs gehören auf den entsprechenden PINs des Steckers.
 
 ![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper010.JPG)
@@ -158,11 +158,24 @@ Einfach das [Sketch](https://github.com/viper-666/xf_roof_module/blob/master/Cro
 
 ### Einbau in den Crossfire
 
-![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper15.JPG)
+Der im vorherigen Punkt erstellte Stecker mit den Kabeln wird nun nach folgenden [Schema](https://github.com/viper-666/xf_roof_module/blob/master/Verkabelung.pdf) im Crossfire verkabelt.
+
+Ich empfehle die Kabel zu verlöten und mit Schrumpfschlauch zu isolieren. 
+
+Wir fangen am Dachschalter an. Um an den Dachschalter zu kommen den Cup-Holder aufmachen, mit den Fingern in die Öffnung greifen und die silbernene Blende vorne an der Schaltung anheben bis sie sich aus der Rasterung löst.
+Anschließend muss das Weiß/Violette Kabel durchtrennt werden und das Rosa Kabel unseres Steckers mit dem Teil des Weiß/Violetten Kabels verbunden werden welches noch am Stecker hängt. Das Schwarze Kabel des Steckers kommt an das nun noch offene Ende des Weiß/Violetten Kabels.
+Das Weiße Kabel unseres Steckers kommt nun noch an das Braun/Gelbe Kabel.
+
+![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper18.JPG)
+
+Jetzt müssen wir im Beifahrerfußraum den Teppich hoch heben und in Richtung Sitz klappen und die weiße Styrophor Platte weg nehmen.
+Die silberne Blechplatte ist mit 3 schwarzen Kunststoffmuttern gesichert, welche entfernt werden müssen.
+Nun können wir diese in Richtung Sitz weg klappen. Der Kabelbaum mit den benötigten Kabeln ist rechts oben.
+
 ![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper16.JPG)
 ![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper17.JPG)
-![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper18.JPG)
 ![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper19.JPG)
+![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper15.JPG)
 
 
 ## Erstellt mit:
