@@ -2,14 +2,27 @@
 
 English readme: [README.md](https://github.com/viper-666/xf_roof_module/blob/master/README.md)
 
-Mit diesem Modul kann man das Verdeck des Crossfire öffnen/schließen ohne das man den Öffnen bzw. Schließen-Button die ganze Zeit gedrückt halten muss.
+Mit diesem Modul kann man das Verdeck des Crossfire öffnen/schließen ohne das man den Öffnen bzw. Schließen-Button die ganze Zeit gedrückt halten muss, ein kurzes antippen reicht.
 Eine weitere Funktion ist, dass man in dem Arduino-Sketch einstellen kann bis zu welcher Geschwindigkeit man dies tun kann.
 Voreingestellt ist 50 km/h (in der Variable "int GESCHWINDIGKEIT = 50") und man sollte dies möglichst nicht erhöhen. Wenn die Geschwindigkeit bei der du das Verdeck öffest zu hoch ist wird dies dein Verdeck oder die Mechanik beschädigen.
+Außerdem werden, nachdem das Verdeck geöffnet ist, die Fenster automatisch hoch gefahren. 
+Es gibt auch noch eine Nothaltfunktion einfach den Taster, egal in welcher Richtung, noch mal drücken und das Dach hält an.
 
 Ich habe das Modul nun schon mehrere Monate ohne Probleme getestet aber es könnte deinen Wagen beschädigen. Deshalb geschieht ein Nachbau auf eigene Gefahr!
 
 
-## Lasst uns anfangen:
+## Bedienung
+
+Will man im Stand das Dach öffnen oder schließen einfach den Schalter kurz in der entsprechenden Richtung drücken. Es kann bis zu 2 Sekunden dauern bis das Dach sich bewegt. Wenn ein Fehler auftritt wird es Pipen.
+Während der Fahrt kann man das Dach bis zu der eingestellten Geschwindigkeit öffnen bzw. schließen es gibt dabei nur folgendes zu beachten:
+Will man das Dach während der Fahrt öffnen ist es ganz wichtig zuerst auf dem Schalter auf öffnen zu drücken und anschließend innerhalb von 2 Sekunden das Dach zu entriegeln.
+Entriegelt man das Dach zuerst, geht das Originale Verdeckmodul des Crossfire auf Störung.
+Beim Schließen während der Fahrt bis zur eingestellten Geschwindigkeit gibt es nichts weiter zu beachten, einfach auf dem Schalter auf schließen drücken und nach ca. 2 Sekunden wird sich das Dach schließen.
+Wenn man während des öffnen oder schließens über die eingestellte Geschwindigkeit kommt geht das Originale Verdeckmodul des Crossfire auf Störung.
+Dann muss man unter die eingestellte Geschwindigkeit gehen und kann nach ein paar Sekunden das Dach wieder betätigen.
+
+
+## Lasst uns anfangen
 
 Zuerst musst du die Hardware bauen, also die Platine löten. Leider habe ich nicht die Kenntnisse eine Platine zu designen welche du dir ätzen lassen kannst.
 Aber falls du so eine Platine erstellt hast stelle mir das Layout bitte zur Verfügung, so dass alle anderen auch davon profitieren können.
@@ -74,6 +87,16 @@ Bis dahin musst du die Schaltung leider wie ich auf einer Lochrasterplatine aufb
 |TE Connectivity AMP 1-1586019-4 VAL-U-LOK CONN RCPT HOUSING 14POS 4.2MM|1 oder 2|
 |TE Connectivity AMP 1586315-1 CONN TERM SOCKET 18-22AWG TIN|14 oder 28|
 
+In Deutschland bekommt man die Buchse, den Stecker und die Buchsenkontakte z.B. bei [Conrad Elektronik](https://www.conrad.de)
+|Artikel|Bezeichnung|
+|---|---|
+|1174833|STIFTSTECKER 180° (1-1586041-4)|
+|1174793|BUCHSENGEHÄUSE (1-0794954-4)|
+|747987|BUCHSENKONTAKT AWG 22-18|
+Man kann aber jede andere Buchse und Stecker nehmen solange diese mindestens 8 Kontakte haben.
+
+
+
 |Platine:|
 |---|
 |Lochrasterplatine|
@@ -123,9 +146,9 @@ PIN 9 mit PIN 13
 
 
 
-### Installation
+### Installation der Software
 
-to be continued...
+Einfach das [Sketch](https://github.com/viper-666/xf_roof_module/blob/master/Crossfire_Dachmodul-4.ino) mit der [ARDUINO IDE](https://www.arduino.cc/en/Main/Software) auf den Arduino laden.
 
 
 ### Einbau in den Crossfire
