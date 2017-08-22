@@ -137,7 +137,8 @@ So sieht das fertige Modul mit dem gedruckten Gehäuse aus:
 
 Ich empfehle den Bau eines Deaktivierungssteckers, dieser wird bei Problemen oder Verkauf des Autos anstatt des Dachmoduls eingesteckt. Damit werden die durchtrennten Leitungen wieder verbunden und der "Originalzustand" wieder hergestellt.
 Dafür einfach bei einer Buchse folgende Pins verbinden:
-
+| | |
+|---|---|---|
 |PIN 3| mit |PIN 11|
 |PIN 7| mit |PIN 12|
 |PIN 9| mit |PIN 13|
