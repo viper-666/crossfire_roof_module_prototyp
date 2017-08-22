@@ -138,11 +138,11 @@ So sieht das fertige Modul mit dem gedruckten Gehäuse aus:
 Ich empfehle den Bau eines Deaktivierungssteckers, dieser wird bei Problemen oder Verkauf des Autos anstatt des Dachmoduls eingesteckt. Damit werden die durchtrennten Leitungen wieder verbunden und der "Originalzustand" wieder hergestellt.
 Dafür einfach bei einer Buchse folgende Pins verbinden:
 
-|A|mit|B|
-|---|---|---|
-|PIN 3| mit |PIN 11|
-|PIN 7| mit |PIN 12|
-|PIN 9| mit |PIN 13|
+|A|B|
+|---|---|
+|PIN 3|PIN 11|
+|PIN 7|PIN 12|
+|PIN 9|PIN 13|
 
 ![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper002.JPG)
 ![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper003.JPG)
@@ -159,6 +159,10 @@ Einfach das [Sketch](https://github.com/viper-666/xf_roof_module/blob/master/Cro
 ### Einbau in den Crossfire
 
 ![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper15.JPG)
+![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper16.JPG)
+![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper17.JPG)
+![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper18.JPG)
+![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper19.JPG)
 
 
 ## Erstellt mit:
