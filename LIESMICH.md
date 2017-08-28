@@ -177,6 +177,15 @@ Nun können wir diese in Richtung Sitz weg klappen. Der Kabelbaum mit den benöt
 ![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper19.JPG)
 ![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper15.JPG)
 
+In diesem Kabelbaum müssen wir nun folgende Kabel suchen:
+- Rosa/Rot/Schwarz (+12V) dieses verbinden wir mit dem roten Kabel des Steckers
+- Braun (Masse) dieses verbinden wir mit den braunen Kabel des Steckers
+- Blau/Grün (BCM PIN 56) dieses muss durchtrennt werden und das Kabelende welches nach links zur Mittelkonsole geht kommt das gelbe und an das andere Ende das blaue Kabel des Steckers
+- Grün/Weiß (BCM PIN 74) hier muss man aufpassen, das Kabel ist mehrfach vorhanden. Am besten man testet mit einen Multimeter in Durchgangsprüfung ob man das richtige Kabel vom Steuergerät PIN 74 erwischt hat. Dann muss dieses durchtrennt werden und das Kabelende welches nach links zur Mittelkonsole geht kommt das orange und an das andere Ende das gelbe Kabel des Steckers
+
+Wenn noch genügend Platz im Kasten für das RCM-Modul und dem Steuergerät ist kann man die Kabel auch direkt am Stecker des Steuergerätes abgreifen und muss nur die Kabel für den Dachschalter durch die Durchführung des Kabelbaumes nach innen führen.
+Vorteil ist, die bessere Zugänglichkeit und das man die Kabel eindeutig am Stecker findet, da dort die PIN-Nummern lesbar sind.
+
 
 ## Erstellt mit:
 
