@@ -85,14 +85,14 @@ Until then you have to build the circuit unfortunately as I on a perfboard.
 |---|---|
 |Value|Quantily|
 |200mA|1|
-|Sicherungshalter|1|
+|Fuse holder|1|
 
 |Plug and socket:| |
 |---|---|
 |Value|Quantily|
-|TE Connectivity AMP 1-1586041-4 VAL-U-LOK CONN HEADER 14POS R/A W/O PEGS|1 oder 2|
-|TE Connectivity AMP 1-1586019-4 VAL-U-LOK CONN RCPT HOUSING 14POS 4.2MM|1 oder 2|
-|TE Connectivity AMP 1586315-1 CONN TERM SOCKET 18-22AWG TIN|14 oder 28|
+|TE Connectivity AMP 1-1586041-4 VAL-U-LOK CONN HEADER 14POS R/A W/O PEGS|1 or 2|
+|TE Connectivity AMP 1-1586019-4 VAL-U-LOK CONN RCPT HOUSING 14POS 4.2MM|1 or 2|
+|TE Connectivity AMP 1586315-1 CONN TERM SOCKET 18-22AWG TIN|14 or 28|
 
 But you can take any other socket and plug as long as they have at least 8 contacts.
 
@@ -108,7 +108,7 @@ In order for the socket to fit, the holes of the circuit board must be inflated.
 
 ![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper001.JPG)
 
-Subsequently, I have constructed the board according to the [schematic] (https://github.com/viper-666/xf_roof_module/blob/master/Dachmodul.pdf):
+Subsequently, I have constructed the board according to the [schematic](https://github.com/viper-666/xf_roof_module/blob/master/Dachmodul.pdf):
 
 At the bottom of the Arduino Nano, on the right the 12-18V to 5V voltage conversion and next to the fuse holder.
 Above the Arduinno Nano the 5 transistors with the associated components.
@@ -119,7 +119,7 @@ You can omit the green socket and the cabling if you want to do without the exte
 ![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper006.JPG)
 ![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper008.JPG)
 
-The plug with the cables is created according to the following [schema] (https://github.com/viper-666/xf_roof_module/blob/master/Wiring.pdf) and integrated into the Crossfire cable harness.
+The plug with the cables is created according to the following [schema](https://github.com/viper-666/xf_roof_module/blob/master/Wiring.pdf) and integrated into the Crossfire cable harness.
 The PINs marked in blue belong to the corresponding PINs of the connector.
 The pins for the plug should be crimped onto the stripped cable ends with a crimping tool. If you do not have a crimping pliers, it is cheap, you can get it for 10-20 $ or you can solder the cable ends with the pins.
 
