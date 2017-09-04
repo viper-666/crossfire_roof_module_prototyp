@@ -13,7 +13,7 @@ There is also an emergency stop function simply push the button, no matter which
 I have tested the module for several months without problems but it could damage your car. Therefore, a replica is done at your own risk!
 
 
-##Handling
+## Handling
 
 If you want to open or close the roof while the car stands simply press the switch short in the appropriate direction. It can take up to 2 seconds before the roof moves. If an error occurs it will piping.
 During the journey, you can open or close the roof up to the set speed. 
