@@ -122,14 +122,14 @@ Damit die Buchse passt müssen die Löcher der Platine aufgebohrt werden.
 Anschließend habe ich die Platine folgendermaßen nach dem [Schaltplan](https://github.com/viper-666/xf_roof_module/blob/master/Dachmodul.pdf) aufgebaut:
 Ganz unten der Arduino Nano, rechts daneben die 12-18V auf 5V Spannungswandlung und daneben den Sichrungshalter.
 Über dem Arduinno Nano die 5 Transistoren mit der dazugehörigen Komponenten.
-Dann noch die fehlenden Verbindungen mit Kabeln herstellen.
+Dann noch die fehlenden Verbindungen mit Kabeln herstellen. Und nicht von dem Kabelchaos abschrecken lassen. Du kannst die grüne Buchse und die Verkabelung weglassen wenn du auf die Erweiterbarkeit auf zusätzliche andrere Funktionen verzichten willst.
 
 ![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper006.JPG)
 ![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper008.JPG)
 
 Der Stecker mit den Kabeln wird nach folgendem [Schema](https://github.com/viper-666/xf_roof_module/blob/master/Verkabelung.pdf) erstellt und in den Kabelbaum des Crossfire eingebunden.
 Die in Blau bezeichneten PINs gehören auf den entsprechenden PINs des Steckers. 
-Die Pins für meinen Stecker sollten mit einer Crimpzange auf die abisolierten Kabelenden aufgekrimpt werden. Falls du keine Crimpzange hast, diese gibt es günstig für 10-20€ oder du kannst die Kabelenden auch mit den Pins verlöten.
+Die Pins für den Stecker sollten mit einer Crimpzange auf die abisolierten Kabelenden aufgekrimpt werden. Falls du keine Crimpzange hast, diese gibt es günstig für 10-20€ oder du kannst die Kabelenden auch mit den Pins verlöten.
 
 ![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper010.JPG)
 ![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper011.JPG)
@@ -155,7 +155,6 @@ Dafür einfach bei einer Buchse folgende Pins verbinden:
 ![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper005.JPG)
 
 
-
 ### Installation der Software
 
 Einfach das [Sketch](https://github.com/viper-666/xf_roof_module/blob/master/Crossfire_Dachmodul-4.ino) mit der [ARDUINO IDE](https://www.arduino.cc/en/Main/Software) auf den Arduino laden.
@@ -176,9 +175,13 @@ Das Weiße Kabel unseres Steckers kommt nun noch an das Braun/Gelbe Kabel.
 ![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper18.JPG)
 
 Jetzt müssen wir im Beifahrerfußraum den Teppich hoch heben und in Richtung Sitz klappen und die weiße Styrophor Platte weg nehmen.
-![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper021.JPG)
+
+![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper020.JPG)
+
 Die silberne Blechplatte ist mit 3 schwarzen Kunststoffmuttern gesichert, welche entfernt werden müssen.
-![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper022.JPG)
+
+![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper021.JPG)
+
 Nun können wir diese in Richtung Sitz weg klappen. Der Kabelbaum mit den benötigten Kabeln ist rechts oben.
 
 ![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper16.JPG)
@@ -208,7 +211,6 @@ Vorteil ist, die bessere Zugänglichkeit und das man die Kabel eindeutig am Stec
 ## Autor
 
 * **Andre Holtkamp** - [viper-666](https://github.com/viper-666)
-
 
 
 ## License
