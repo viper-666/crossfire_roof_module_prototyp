@@ -34,7 +34,7 @@ Aber falls du so eine Platine erstellt hast stelle mir das Layout bitte zur Verf
 Bis dahin musst du die Schaltung leider wie ich auf einer Lochrasterplatine aufbauen.
 
 
-### Stückliste Hardware
+## Stückliste Hardware
 
 |Mikrocontroler:| |
 |---|---|
@@ -155,20 +155,22 @@ Dafür einfach bei einer Buchse folgende Pins verbinden:
 ![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper005.JPG)
 
 
-### Installation der Software
+## Installation der Software
 
 Einfach das [Sketch](https://github.com/viper-666/xf_roof_module/blob/master/Crossfire_Dachmodul-4.ino) mit der [ARDUINO IDE](https://www.arduino.cc/en/Main/Software) auf den Arduino laden.
 
 
-### Einbau in den Crossfire
+## Einbau in den Crossfire
 
 Der im vorherigen Punkt erstellte Stecker mit den Kabeln wird nun nach folgenden [Schema](https://github.com/viper-666/xf_roof_module/blob/master/Verkabelung.pdf) im Crossfire verkabelt.
 
 Ich empfehle die Kabel zu verlöten und mit Schrumpfschlauch zu isolieren. 
 
 Wir fangen am Dachschalter an. Um an den Dachschalter zu kommen den Cup-Holder aufmachen, mit den Fingern in die Öffnung greifen und die silbernene Blende vorne an der Schaltung anheben bis sie sich aus der Rasterung löst.
+
 ![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper026.JPG)
 ![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper025.JPG)
+
 Anschließend muss das Weiß/Violette Kabel durchtrennt werden und das Rosa Kabel unseres Steckers mit dem Teil des Weiß/Violetten Kabels verbunden werden welches noch am Stecker hängt. Das Schwarze Kabel des Steckers kommt an das nun noch offene Ende des Weiß/Violetten Kabels.
 Das Weiße Kabel unseres Steckers kommt nun noch an das Braun/Gelbe Kabel.
 
@@ -197,6 +199,7 @@ In diesem Kabelbaum müssen wir nun folgende Kabel suchen:
 
 Wenn noch genügend Platz im Kasten für das RCM-Modul und dem Steuergerät ist kann man die Kabel auch direkt am Stecker des Steuergerätes abgreifen und muss nur die Kabel für den Dachschalter durch die Durchführung des Kabelbaumes nach innen führen.
 Vorteil ist, die bessere Zugänglichkeit und das man die Kabel eindeutig am Stecker findet, da dort die PIN-Nummern lesbar sind.
+
 ![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper022.JPG)
 ![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper023.JPG)
 ![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper024.JPG)
