@@ -37,7 +37,7 @@ Bis dahin musst du die Schaltung leider wie ich auf einer Lochrasterplatine aufb
 |Wert		|Anzahl|
 |Arduino Nano V3|1     |
 
-|Widerstaende:| |
+|Widerstände:| |
 |---|---|
 |Wert|Anzahl|
 |1M |1 |
@@ -111,7 +111,7 @@ Zum Aufbau wird eine Lochrasterplatine im Maß von 77mm x 80mm benötigt.
 ![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper000.JPG)
 
 Zuerst habe ich die beiden Buchsen eingelötet. Für das Dachmodul wird nur die untere benötigt, die obere führt die anderen Ein- und Ausgänge des Arduino Nano nach außen. Dies habe ich für zukünftige Erweiterungen der Funktionen gemacht.
-Dafür müssen die Löcher der Platine aufgebohrt werden.
+Damit die Buchse passt müssen die Löcher der Platine aufgebohrt werden.
 
 ![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper001.JPG)
 
@@ -124,7 +124,8 @@ Dann noch die fehlenden Verbindungen mit Kabeln herstellen.
 ![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper008.JPG)
 
 Der Stecker mit den Kabeln wird nach folgendem [Schema](https://github.com/viper-666/xf_roof_module/blob/master/Verkabelung.pdf) erstellt und in den Kabelbaum des Crossfire eingebunden.
-Die in Blau bezeichneten PINs gehören auf den entsprechenden PINs des Steckers.
+Die in Blau bezeichneten PINs gehören auf den entsprechenden PINs des Steckers. 
+Die Pins für meinen Stecker sollten mit einer Crimpzange auf die abisolierten Kabelenden aufgekrimpt werden. Falls du keine Crimpzange hast, diese gibt es günstig für 10-20€ oder du kannst die Kabelenden auch mit den Pins verlöten.
 
 ![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper010.JPG)
 ![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper011.JPG)
@@ -169,7 +170,9 @@ Das Weiße Kabel unseres Steckers kommt nun noch an das Braun/Gelbe Kabel.
 ![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper18.JPG)
 
 Jetzt müssen wir im Beifahrerfußraum den Teppich hoch heben und in Richtung Sitz klappen und die weiße Styrophor Platte weg nehmen.
+![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper021.JPG)
 Die silberne Blechplatte ist mit 3 schwarzen Kunststoffmuttern gesichert, welche entfernt werden müssen.
+![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper022.JPG)
 Nun können wir diese in Richtung Sitz weg klappen. Der Kabelbaum mit den benötigten Kabeln ist rechts oben.
 
 ![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper16.JPG)
@@ -180,11 +183,14 @@ Nun können wir diese in Richtung Sitz weg klappen. Der Kabelbaum mit den benöt
 In diesem Kabelbaum müssen wir nun folgende Kabel suchen:
 - Rosa/Rot/Schwarz (+12V) dieses verbinden wir mit dem roten Kabel des Steckers
 - Braun (Masse) dieses verbinden wir mit den braunen Kabel des Steckers
-- Blau/Grün (BCM PIN 56) dieses muss durchtrennt werden und das Kabelende welches nach links zur Mittelkonsole geht kommt das gelbe und an das andere Ende das blaue Kabel des Steckers
-- Grün/Weiß (BCM PIN 74) hier muss man aufpassen, das Kabel ist mehrfach vorhanden. Am besten man testet mit einen Multimeter in Durchgangsprüfung ob man das richtige Kabel vom Steuergerät PIN 74 erwischt hat. Dann muss dieses durchtrennt werden und das Kabelende welches nach links zur Mittelkonsole geht kommt das orange und an das andere Ende das gelbe Kabel des Steckers
+- Blau/Grün (BCM PIN 56) dieses muss durchtrennt werden und an das Kabelende welches nach links zur Mittelkonsole geht kommt das gelbe und an das andere Ende das blaue Kabel des Steckers
+- Grün/Weiß (BCM PIN 74) hier muss man aufpassen, das Kabel ist mehrfach vorhanden. Am besten man testet mit einen Multimeter in Durchgangsprüfung ob man das richtige Kabel vom Steuergerät PIN 74 erwischt hat. Dann muss dieses durchtrennt werden und an das Kabelende welches nach links zur Mittelkonsole geht kommt das orange und an das andere Ende das grüne Kabel des Steckers
 
 Wenn noch genügend Platz im Kasten für das RCM-Modul und dem Steuergerät ist kann man die Kabel auch direkt am Stecker des Steuergerätes abgreifen und muss nur die Kabel für den Dachschalter durch die Durchführung des Kabelbaumes nach innen führen.
 Vorteil ist, die bessere Zugänglichkeit und das man die Kabel eindeutig am Stecker findet, da dort die PIN-Nummern lesbar sind.
+![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper022.JPG)
+![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper023.JPG)
+![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper024.JPG)
 
 
 ## Erstellt mit:
@@ -203,6 +209,3 @@ Vorteil ist, die bessere Zugänglichkeit und das man die Kabel eindeutig am Stec
 
 Dieses Projekt steht unter GNU General Public License v3.0 License - schau dir die [LICENSE](https://github.com/viper-666/xf_roof_module/blob/master/LICENSE) an fuer details.
 
-## Acknowledgments
-
-to be continued...
