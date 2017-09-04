@@ -5,7 +5,7 @@ Deutsche Anleitung: [LIESMICH.md](https://github.com/viper-666/xf_roof_module/bl
 This module allows you to open / close the Crossfire's soft top without having to press and hold the Open / Close button all the time.
 
 Another feature is that you can set up the speed at which you can do this in the Arduino Sketch.
-The default is 31 mph 50 kph (variable "int GESCHWINDIGKEIT = 50") and should not be increased. If the speed at which you open the soft top is too high, this will damage your convertible top or the mechanics.
+The default is 31 mph (50 kph) (variable "int GESCHWINDIGKEIT = 50" attention it is in kph not in mph) and should not be increased. If the speed at which you open the soft top is too high, this will damage your convertible top or the mechanics.
 
 In addition, the windows are automatically raised after the convertible top is opened.
 There is also an emergency stop function simply push the button, no matter which direction, again and the roof stops.
