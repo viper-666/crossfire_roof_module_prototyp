@@ -149,12 +149,12 @@ Simply connect the following pins for a socket:
 
 ## Installing of the firmware
 
-Simply use the [Sketch] (https://github.com/viper-666/xf_roof_module/blob/master/Crossfire_Dachmodul-4.ino) with the [ARDUINO IDE] (https://www.arduino.cc/en/Main/Software) to the Arduino.
+Simply use the [Sketch](https://github.com/viper-666/xf_roof_module/blob/master/Crossfire_Dachmodul-4.ino) with the [ARDUINO IDE](https://www.arduino.cc/en/Main/Software) to the Arduino.
 
 
 ## Installation in the Crossfire
 
-The plug created in the previous section with the cables is now wired according to the following [schema] (https://github.com/viper-666/xf_roof_module/blob/master/Wiring.pdf) in the Crossfire.
+The plug created in the previous section with the cables is now wired according to the following [schema](https://github.com/viper-666/xf_roof_module/blob/master/Wiring.pdf) in the Crossfire.
 
 I recommend soldering the cables and isolating them with a shrink tube.
 
