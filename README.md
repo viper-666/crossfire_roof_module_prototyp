@@ -186,8 +186,8 @@ Now we can fold this towards the seat. The wiring harness with the required cabl
 ![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper15.JPG)
 
 In this harness we have to look for the following cables:
-- Pink / Red / Black (+ 12V) this we connect with the red cable of the plug
-- Brown (ground) this we connect with the brown cables of the plug
+- Pink / Red / Black (+ 12V) which we connect with the red cable of the plug
+- Brown (ground) this we will connect with the brown cables of the plug
 - Blue / Green (BCM PIN 56) this must be cut through and the cable end which goes to the left to the center console comes the yellow and to the other end the blue cable of the plug
 - Green / White (BCM PIN 74) you have to be careful, the cable is available several times. It is best to test with a multimeter in the continuity test whether the correct cable from the control unit PIN 74 has caught. Then this must cut through and to the cable end which goes to the left to the center console comes the orange and to the other end the green cable of the plug
 
