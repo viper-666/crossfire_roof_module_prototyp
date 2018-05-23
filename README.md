@@ -24,9 +24,7 @@ If you want to open the roof while driving, it is very important first to press 
 If you unlock the roof first, the original CrossFire convertible module is interrupted and you have to close the roof again and wait a few seconds until you can open it.
 
 When closing while driving up to the set speed, there is nothing else to do, just press the switch on close and after about 2 seconds the roof will close.
-If you get over the set speed while opening or closing, the CrossFire's original convertible module goes to fault.
-Then you have to go below the set speed and can press the roof again after a few seconds.
-
+If you get over the set speed while opening or closing, the roof stops moving and you have to speed down under the set speed and the roof will complete the action.
 
 ## Lets start
 
