@@ -4,7 +4,7 @@
  * -Halten des Tasters für Dach-Auf und Dach-Zu entfällt, einfach Taster 1x kurz drücken.
  * -Öffnen und Schließen des Daches bis zu x km/h
  * Skript von Andre Holtkamp AKA Viper 
- * 05/2017 
+ * V1.1 vom 05/2018 
  * https://crossfire-forum-deutschland.de/viewtopic.php?f=8&t=694#p5604
  * 
  * Anschluss Dachsteuerung PINS Arduino
@@ -21,13 +21,15 @@
  #define FREQ_3HZ 9      // Arduino Digital I/O pin für Ausgang 3Hz Erzeugung
  #define OUT_PIN_F 6  // Arduino Digital I/O pin für Ausgang schaltet Transistor für ABS-Steuersignal 3Hz/21Hz (HIGH=PIN 56 Steuergerät durchgeschaltet)
  #define OUT_PIN_F1 7  // Arduino Digital I/O pin für Ausgang  schaltet Transistor für Radfrequenz Geschwindigkeitssignal (HIGH=PIN 74 Steuergerät durchgeschaltet)
+ #define BUZZER 10  // Arduino Digital I/O pin für BUZZER
 
  long f = 0;
  int FENSTERZU = 0;  // Variable Fenster ZU/AUF
  int LED = 0;  // Variable LED AN/AUS
  int IN_PIN_AUF_ZU = 0;  // Arduino Analog I/O pin für Ausgang Dach Auf
  int AKTIVIERT = 0;   // Speichert ob das Dach gerade göffnet/geschlossen wird
- int  HOLD= 0;   // Variable um das Dach bei Geschwindigkeiten zwischen 7km/h bis GESCHWINDIGKEIT zu freizuschalten
+ int SPEED = 0;   // Speichert ob das Dach gerade göffnet/geschlossen wird und die Geschwindigkeit überschritten wurde
+ int  HOLD1 = 0;   // Variable um das Dach bei Geschwindigkeiten zwischen 7km/h bis GESCHWINDIGKEIT zu freizuschalten
  int  HOLD_AN_AUS = 0;   // Variable um das Dach bei Geschwindigkeiten zwischen 7km/h bis GESCHWINDIGKEIT zu freizuschalten
  String MELDUNG = "";   // Debugvariable
  int ZFZU = 0;   //Zählvariable
@@ -48,7 +50,7 @@ volatile unsigned long count;
  const unsigned long Tmess = 200; // Messfrequenz Frequenzmessung in ms
  int TimeHOLD = 10000; // Zeitvariable wie lange zwischen 7km/h bis GESCHWINDIGKEIT freigeschaltet wird in ms
  int TimeHOLD_AN = 2000; // Zeitvariable wann Ausgang Dach AUF/ZU geschaltet wird in ms
- int GESCHWINDIGKEIT = 50; //Geschwindigkeit bis zu der das Dach geöffnet werden kann
+ int GESCHWINDIGKEIT = 55; //Geschwindigkeit bis zu der das Dach geöffnet werden kann
 
 void setup() {
 
@@ -119,7 +121,7 @@ void loop() {
      Serial.print(MELDUNG); Serial.print("\t\t");
      Serial.print(ANALOG_EINGANG0);Serial.print("\t"); 
      Serial.print(AKTIVIERT);Serial.print("\t");
-     Serial.print(HOLD);Serial.print("\t");  
+     Serial.print(HOLD1);Serial.print("\t");  
      Serial.print(HOLD_AN_AUS);Serial.print("\t");
      Serial.print(LED);Serial.print("\t");
      Serial.print(digitalRead(LED_SCHALTER));Serial.print("\t");
@@ -136,9 +138,10 @@ if ((millis() >= (loopTime + KARENZZEIT)) && (HOLD_AN_AUS == 0) && (f < (GESCHWI
     digitalWrite(OUT_PIN_AUF, HIGH);
     AKTIVIERT = 1; // Dach auf/zu aktiviert
     FENSTERZU = 1;
+    HOLD_AN_AUS = 1;
     loopTime = millis(); // Laufzeit setzen
     loopTimeMAX = millis(); // Laufzeit setzen
-    HOLD = 0;
+    HOLD1 = 0;
     MELDUNG = "Taster AUF";
   } 
 
@@ -148,11 +151,12 @@ if ((millis() >= (loopTime + KARENZZEIT)) && (HOLD_AN_AUS == 0) && (f < (GESCHWI
     F3HZ_AN();  
    // schalte Ausgang an
     digitalWrite(OUT_PIN_ZU, HIGH);
+    HOLD_AN_AUS = 2;
     AKTIVIERT = 1;// Dach auf/zu aktiviert
     FENSTERZU = 0;
     loopTime = millis(); // Laufzeit setzen
     loopTimeMAX = millis(); // Laufzeit setzen
-    HOLD = 0;
+    HOLD1 = 0;
     MELDUNG = "Taster Zu";
   } 
 
@@ -161,7 +165,7 @@ if ((digitalRead(LED_SCHALTER) == LOW) && (f < (GESCHWINDIGKEIT*6)) && ((ANALOG_
     F3HZ_AN();
     // schalte Ausgang an
     //digitalWrite(OUT_PIN_AUF, HIGH);
-    HOLD= 1;
+    HOLD1 = 1;
     HOLD_AN_AUS = 1;
     loopTimeHOLD = millis();
     AKTIVIERT = 1;// Dach auf/zu aktiviert
@@ -177,7 +181,7 @@ if ((digitalRead(LED_SCHALTER) == LOW) && (f < (GESCHWINDIGKEIT*6)) && (ANALOG_E
     // schalte Frequenz
     F3HZ_AN();
     //digitalWrite(OUT_PIN_ZU, HIGH);
-    HOLD = 1;
+    HOLD1 = 1;
     HOLD_AN_AUS = 2;
     loopTimeHOLD = millis();
      AKTIVIERT = 1;// Dach auf/zu aktiviert
@@ -249,38 +253,50 @@ if ((millis() >= (loopTimeMAX + MAXLAUFZEIT)) && (AKTIVIERT == 1) && (ANALOG_EIN
   } 
 
 // Dach_AUF ist gedrückt ohne LED und Wartezeit abgelaufen
-if ((millis() >= (loopTimeHOLD + TimeHOLD_AN)) && (HOLD == 1) && (HOLD_AN_AUS == 1) && (ANALOG_EINGANG0 > 300)) {
+if ((millis() >= (loopTimeHOLD + TimeHOLD_AN)) && (HOLD1 == 1) && (HOLD_AN_AUS == 1) && (ANALOG_EINGANG0 > 300)) {
     MELDUNG = "Schalte_Auf";
     digitalWrite(OUT_PIN_AUF, HIGH);
   } 
 
 // Dach_ZU ist gedrückt ohne LED und Wartezeit abgelaufen
-if ((millis() >= (loopTimeHOLD + TimeHOLD_AN)) && (HOLD == 1) && (HOLD_AN_AUS == 2) && (ANALOG_EINGANG0 > 300)) {
+if ((millis() >= (loopTimeHOLD + TimeHOLD_AN)) && (HOLD1 == 1) && (HOLD_AN_AUS == 2) && (ANALOG_EINGANG0 > 300)) {
     MELDUNG = "Schalte_Zu";
     digitalWrite(OUT_PIN_ZU, HIGH);
   } 
 
 // Max. Laufzeit Freischaltung ist abgelaufen
-if ((millis() >= (loopTimeHOLD + TimeHOLD)) && (HOLD == 1) && (AKTIVIERT == 0) && (ANALOG_EINGANG0 > 300)) {
+if ((millis() >= (loopTimeHOLD + TimeHOLD)) && (HOLD1 == 1) && (AKTIVIERT == 0) && (ANALOG_EINGANG0 > 300)) {
     MELDUNG = "Laufzeit Freischaltung abgelaufen";
     STOP (0);
   } 
 
 //  Geschwindigkeit überprüfen**************************************************************************************************************************
  
- if ((f < (GESCHWINDIGKEIT*6)) && (AKTIVIERT==1) && (HOLD == 0)) {
-      // schalte Frequenz
-  //  F3HZ_AN();
-        
+ if ((f < (GESCHWINDIGKEIT*6)) && (AKTIVIERT==1) && (SPEED == 1) && (HOLD_AN_AUS == 1)) {
+     MELDUNG = "Schalte_Auf";
+    digitalWrite(OUT_PIN_AUF, HIGH);
+    loopTime = millis(); // Laufzeit setzen
+    loopTimeMAX = millis(); // Laufzeit setzen
+    digitalWrite(BUZZER, LOW);
+    SPEED = 0;        
   }
 
-if ((f > (GESCHWINDIGKEIT*6)))
+ if ((f < (GESCHWINDIGKEIT*6)) && (AKTIVIERT==1) && (SPEED == 1) && (HOLD_AN_AUS == 2)) {
+     MELDUNG = "Schalte_Zu";
+    digitalWrite(OUT_PIN_ZU, HIGH);
+    loopTime = millis(); // Laufzeit setzen
+    loopTimeMAX = millis(); // Laufzeit setzen
+    digitalWrite(BUZZER, LOW);
+    SPEED = 0;        
+  }
+
+if ((f > (GESCHWINDIGKEIT*6))&& (AKTIVIERT==1))
     {
-     // schalte Frequenz durch:
-     //F3HZ_AUS();
-     MELDUNG = "Zu schnell 3HZ_Aus";
-    STOP(0);
-     Timestamp = millis();
+    MELDUNG = "Zu schnell";
+    digitalWrite(OUT_PIN_ZU, LOW); //Dach zu Stop
+    digitalWrite(OUT_PIN_AUF, LOW); //Dach Auf Stop
+    digitalWrite(BUZZER, HIGH);
+    SPEED = 1;
     }
 
      count = 0;
@@ -304,7 +320,7 @@ void STOP (boolean FZU) {
   digitalWrite(OUT_PIN_ZU, LOW);
   LED = 0;
   AKTIVIERT = 0;
-  HOLD = 0;
+  HOLD1 = 0;
   HOLD_AN_AUS = 0;
   MELDUNG = "STOP Ausgefuehrt";
   MELDUNG = "STOP Ausgefuehrt";
