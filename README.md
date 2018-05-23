@@ -34,7 +34,7 @@ But if you have created such a circuit board, please give me the file, I make th
 Until then you have to build the circuit unfortunately as I on a perfboard.
 
 
-## POM Hardware
+## BOM Hardware
 
 
 |Microcontroler:| |
