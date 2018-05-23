@@ -21,9 +21,8 @@ Während der Fahrt kann man das Dach bis zu der eingestellten Geschwindigkeit ö
 Will man das Dach während der Fahrt öffnen ist es ganz wichtig zuerst auf dem Schalter öffnen zu drücken und anschließend innerhalb von 2 Sekunden das Dach zu entriegeln.
 Entriegelt man das Dach zuerst, geht das Originale Verdeckmodul des Crossfire auf Störung und man muss das Dach wieder verschließen und ein m paar Sekunden warten bis man es öffnen kann.
 
-Beim Schließen während der Fahrt bis zur eingestellten Geschwindigkeit gibt es nichts weiter zu beachten, einfach auf dem Schalter auf schließen drücken und nach ca. 2 Sekunden wird sich das Dach schließen.
-Wenn man während des öffnen oder schließens über die eingestellte Geschwindigkeit kommt geht das Originale Verdeckmodul des Crossfire auf Störung.
-Dann muss man unter die eingestellte Geschwindigkeit gehen und kann nach ein paar Sekunden das Dach wieder betätigen.
+Beim Schließen während der Fahrt bis zur eingestellten Geschwindigkeit gibt es nichts weiter zu beachten, einfach auf dem Schalter schließen drücken und nach ca. 2 Sekunden wird sich das Dach schließen.
+Wenn man während des öffnen oder schließens über die eingestellte Geschwindigkeit stoppt das Verfahren des Daches und fährt automatisch weiter sobald man unter dieser Geschwindigkeit kommt.
 
 
 ## Lasst uns anfangen
