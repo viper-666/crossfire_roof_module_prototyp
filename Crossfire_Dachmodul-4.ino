@@ -25,6 +25,7 @@
 
  long f = 0;
  int FENSTERZU = 0;  // Variable Fenster ZU/AUF
+ int FENSTERZUA = 0;  // Variable Fenster ZU/AUF automatische schließen Fenster
  int LED = 0;  // Variable LED AN/AUS
  int IN_PIN_AUF_ZU = 0;  // Arduino Analog I/O pin für Ausgang Dach Auf
  int AKTIVIERT = 0;   // Speichert ob das Dach gerade göffnet/geschlossen wird
@@ -138,6 +139,7 @@ if ((millis() >= (loopTime + KARENZZEIT)) && (HOLD_AN_AUS == 0) && (f < (GESCHWI
     digitalWrite(OUT_PIN_AUF, HIGH);
     AKTIVIERT = 1; // Dach auf/zu aktiviert
     FENSTERZU = 1;
+    FENSTERZUA = 1;
     HOLD_AN_AUS = 1;
     loopTime = millis(); // Laufzeit setzen
     loopTimeMAX = millis(); // Laufzeit setzen
@@ -153,7 +155,8 @@ if ((millis() >= (loopTime + KARENZZEIT)) && (HOLD_AN_AUS == 0) && (f < (GESCHWI
     digitalWrite(OUT_PIN_ZU, HIGH);
     HOLD_AN_AUS = 2;
     AKTIVIERT = 1;// Dach auf/zu aktiviert
-    FENSTERZU = 0;
+    FENSTERZU = 1;
+    FENSTERZUA = 2;
     loopTime = millis(); // Laufzeit setzen
     loopTimeMAX = millis(); // Laufzeit setzen
     HOLD1 = 0;
@@ -170,6 +173,7 @@ if ((digitalRead(LED_SCHALTER) == LOW) && (f < (GESCHWINDIGKEIT*6)) && ((ANALOG_
     loopTimeHOLD = millis();
     AKTIVIERT = 1;// Dach auf/zu aktiviert
     FENSTERZU = 1;
+    FENSTERZUA = 1;
     loopTime = millis(); // Laufzeit setzen
     loopTimeMAX = millis(); // Laufzeit setzen
     MELDUNG = "Taster AUF ohne LED*";
@@ -185,7 +189,8 @@ if ((digitalRead(LED_SCHALTER) == LOW) && (f < (GESCHWINDIGKEIT*6)) && (ANALOG_E
     HOLD_AN_AUS = 2;
     loopTimeHOLD = millis();
      AKTIVIERT = 1;// Dach auf/zu aktiviert
-     FENSTERZU = 0;
+     FENSTERZU = 1;
+     FENSTERZUA = 2;
     loopTime = millis(); // Laufzeit setzen
     loopTimeMAX = millis(); // Laufzeit setzen
     MELDUNG = "Taster ZU ohne LED*";
@@ -207,27 +212,54 @@ if ((millis() >= (loopTime + KARENZZEIT)) && (AKTIVIERT == 1) && (ANALOG_EINGANG
 
 
 // Fenstersteuerung ***************************************************************************************************************************
-// Fenster automatisch schließen
-    if ((millis() >= (loopTimeFZU + 4 * DOPPELKLICKZEIT)) && (ZFZU==1)) {
+// Fenster automatisch schließen nach Dach öffnen
+    if ((millis() >= (loopTimeFZU + 4 * DOPPELKLICKZEIT)) && (ZFZU==1) && (FENSTERZUA == 1)) {
     digitalWrite(OUT_PIN_AUF, HIGH);
     ZFZU++;
     MELDUNG = "Fenster schließen";
     }
   
-    if (millis() >= (loopTimeFZU + (5 * DOPPELKLICKZEIT)) && (ZFZU==2)) {
+    if (millis() >= (loopTimeFZU + (5 * DOPPELKLICKZEIT)) && (ZFZU==2) && (FENSTERZUA == 1)) {
     digitalWrite(OUT_PIN_AUF, LOW);
     ZFZU++;
     }
     
-    if (millis() >= (loopTimeFZU + (6 * DOPPELKLICKZEIT)) && (ZFZU==3)) {
+    if (millis() >= (loopTimeFZU + (6 * DOPPELKLICKZEIT)) && (ZFZU==3) && (FENSTERZUA == 1)) {
     digitalWrite(OUT_PIN_AUF, HIGH);
     ZFZU++;
     }
     
-    if (millis() >= (loopTimeFZU + (22 * DOPPELKLICKZEIT)) && (ZFZU==4)) {
+    if (millis() >= (loopTimeFZU + (22 * DOPPELKLICKZEIT)) && (ZFZU==4) && (FENSTERZUA == 1)) {
     digitalWrite(OUT_PIN_AUF, LOW);
     ZFZU = 0;
+    FENSTERZUA = 0;
     }
+
+
+// Fenster automatisch schließen nach Dach schließen
+    if ((millis() >= (loopTimeFZU + 4 * DOPPELKLICKZEIT)) && (ZFZU==1) && (FENSTERZUA == 2)) {
+    digitalWrite(OUT_PIN_ZU, HIGH);
+    ZFZU++;
+    MELDUNG = "Fenster schließen";
+    }
+  
+    if (millis() >= (loopTimeFZU + (5 * DOPPELKLICKZEIT)) && (ZFZU==2) && (FENSTERZUA == 2)) {
+    digitalWrite(OUT_PIN_ZU, LOW);
+    ZFZU++;
+    }
+    
+    if (millis() >= (loopTimeFZU + (6 * DOPPELKLICKZEIT)) && (ZFZU==3) && (FENSTERZUA == 2)) {
+    digitalWrite(OUT_PIN_ZU, HIGH);
+    ZFZU++;
+    }
+    
+    if (millis() >= (loopTimeFZU + (22 * DOPPELKLICKZEIT)) && (ZFZU==4) && (FENSTERZUA == 2)) {
+    digitalWrite(OUT_PIN_ZU, LOW);
+    ZFZU = 0;
+    FENSTERZUA = 0;
+    }
+
+
 
 //**************************************************************************************************************************
 
