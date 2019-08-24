@@ -28,7 +28,11 @@ If you get over the set speed while opening or closing, the roof stops moving an
 
 ## Lets start
 
-First you have to build the hardware, so solder the board. 
+First you have to build the hardware, so solder the board. Unfortunately, I do not have the knowledge to design a circuit board which you can etch.
+But if you have created such a circuit board, please give me the file, I make the layout available so that everyone else can benefit from it.
+
+Until then you have to build the circuit unfortunately as I on a perfboard.
+
 
 ## BOM Hardware
 
@@ -93,15 +97,22 @@ But you can take any other socket and plug as long as they have at least 8 conta
 
 ## Building the hardware
 
-A PCB measuring 90mm x 53mm is required for assembly.
+A perfboard measuring 77mm x 80mm is required for assembly.
 
 ![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper000.JPG)
 
-First I soldered the small parts than the Arduino and the socket. 
+First I soldered the two sockets. For the roof module only the lower one is required, the upper one guides the other inputs and outputs of the Arduino Nano to the outside. This I have made for future extensions of the functions.
+In order for the socket to fit, the holes of the circuit board must be inflated.
 
 ![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper001.JPG)
 
 Subsequently, I have constructed the board according to the [schematic](https://github.com/viper-666/xf_roof_module/blob/master/Dachmodul.pdf):
+
+At the bottom of the Arduino Nano, on the right the 12-18V to 5V voltage conversion and next to the fuse holder.
+Above the Arduinno Nano the 5 transistors with the associated components.
+Then make the missing connections with cables. And do not let the cable chaos deter you. 
+
+You can omit the green socket and the cabling if you want to do without the extensibility to additional other functions.
 
 ![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper006.JPG)
 ![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper008.JPG)
@@ -151,7 +162,7 @@ We start at the roof switch. To get to the roof switch, open the cup holder, gra
 ![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper026.JPG)
 ![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper025.JPG)
 
-The white / purple cable must then be cut and the purple cable of our plug must be connected with the part of the white / purple cable which is still hanging on the plug. The black cable of the plug comes to the now still open end of the white / purple cable.
+The white / purple cable must then be cut and the pink cable of our plug must be connected with the part of the white / purple cable which is still hanging on the plug. The black cable of the plug comes to the now still open end of the white / purple cable.
 The white cable of our plug comes to the brown / yellow cable.
 
 
