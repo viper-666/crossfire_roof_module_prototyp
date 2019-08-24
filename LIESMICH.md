@@ -27,11 +27,7 @@ Wenn man während des öffnen oder schließens über die eingestellte Geschwindi
 
 ## Lasst uns anfangen
 
-Zuerst musst du die Hardware bauen, also die Platine löten. Leider habe ich nicht die Kenntnisse eine Platine zu designen welche du dir ätzen lassen kannst.
-Aber falls du so eine Platine erstellt hast stelle mir das Layout bitte zur Verfügung, so dass alle anderen auch davon profitieren können.
-
-Bis dahin musst du die Schaltung leider wie ich auf einer Lochrasterplatine aufbauen.
-
+Zuerst musst du die Hardware bauen, also die Platine löten.
 
 ## Stückliste Hardware
 
@@ -104,24 +100,20 @@ Man kann aber jede andere Buchse und Stecker nehmen solange diese mindestens 8 K
 
 |Platine:|
 |---|
-|Lochrasterplatine|
+|Siehe Gerber Files|
 
 
 ## Aufbau der Hardware
 
-Zum Aufbau wird eine Lochrasterplatine im Maß von 77mm x 80mm benötigt.
+Zum Aufbau wird die Platine im Maß von 90mm x 53mm benötigt.
 
 ![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper000.JPG)
 
-Zuerst habe ich die beiden Buchsen eingelötet. Für das Dachmodul wird nur die untere benötigt, die obere führt die anderen Ein- und Ausgänge des Arduino Nano nach außen. Dies habe ich für zukünftige Erweiterungen der Funktionen gemacht.
-Damit die Buchse passt müssen die Löcher der Platine aufgebohrt werden.
+Zuerst habe ich die kleineren Bauteile und zum Schluss den Arduino und die Buchse eingelötet. 
 
 ![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper001.JPG)
+Die Platine nach dem [Schaltplan](https://github.com/viper-666/xf_roof_module/blob/master/Dachmodul.pdf) aufbauen.
 
-Anschließend habe ich die Platine folgendermaßen nach dem [Schaltplan](https://github.com/viper-666/xf_roof_module/blob/master/Dachmodul.pdf) aufgebaut:
-Ganz unten der Arduino Nano, rechts daneben die 12-18V auf 5V Spannungswandlung und daneben den Sichrungshalter.
-Über dem Arduinno Nano die 5 Transistoren mit der dazugehörigen Komponenten.
-Dann noch die fehlenden Verbindungen mit Kabeln herstellen. Und nicht von dem Kabelchaos abschrecken lassen. Du kannst die grüne Buchse und die Verkabelung weglassen wenn du auf die Erweiterbarkeit auf zusätzliche andrere Funktionen verzichten willst.
 
 ![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper006.JPG)
 ![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper008.JPG)
@@ -165,12 +157,12 @@ Der im vorherigen Punkt erstellte Stecker mit den Kabeln wird nun nach folgenden
 
 Ich empfehle die Kabel zu verlöten und mit Schrumpfschlauch zu isolieren. 
 
-Wir fangen am Dachschalter an. Um an den Dachschalter zu kommen den Cup-Holder aufmachen, mit den Fingern in die Öffnung greifen und die silbernene Blende vorne an der Schaltung anheben bis sie sich aus der Rasterung löst.
+Wir fangen am Dachschalter an. Um an den Dachschalter zu kommen den Cup-Holder aufmachen, mit den Fingern in die Öffnung greifen und die silbernene Blende vorne an der Schaltung anheben bis sie sich an der Schaltung aus der Rasterung löst.
 
 ![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper026.JPG)
-![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper025.JPG)
 
-Anschließend muss das Weiß/Violette Kabel durchtrennt werden und das Rosa Kabel unseres Steckers mit dem Teil des Weiß/Violetten Kabels verbunden werden welches noch am Stecker hängt. Das Schwarze Kabel des Steckers kommt an das nun noch offene Ende des Weiß/Violetten Kabels.
+
+Anschließend muss das Weiß/Violette Kabel durchtrennt werden und das Lila Kabel unseres Steckers mit dem Teil des Weiß/Violetten Kabels verbunden werden welches noch am Stecker hängt. Das Schwarze Kabel des Steckers kommt an das nun noch offene Ende des Weiß/Violetten Kabels.
 Das Weiße Kabel unseres Steckers kommt nun noch an das Braun/Gelbe Kabel.
 
 ![Build of the prototyp-PCB](https://github.com/viper-666/xf_roof_module/blob/master/Viper18.JPG)
